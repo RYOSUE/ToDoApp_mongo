@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">ToDoの新規作成</h2>
+                    <form action="/todolists" method="POST">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">タイトル</label>
+                            <input type="text" id="title" name="todolist[title]" class="form-control" placeholder="タイトル"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="content" class="form-label">内容</label>
+                            <textarea id="content" name="todolist[content]" class="form-control" rows="3"
+                                placeholder="内容を入力してください" required></textarea>
+                        </div>
+                        <button class="btn btn-primary">登録する</button>
+                        <a href="/todolists" class="btn btn-link">一覧に戻る</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h1>ToDoの新規作成</h1>
+    <form action="/todolists" method="POST">
+        <div>
+            <label for="title">タイトル</label>
+            <input type="text" id="title" name="todolist[title]" placeholder="タイトル" required>
+        </div>
+        <div>
+            <label for="content">内容</label>
+            <input type="text" id="content" name="todolist[content]" placeholder="内容" required>
+        </div>
+        <button>登録する</button>
+    </form>
+    <a href="/todolists">一覧に戻る</a> -->

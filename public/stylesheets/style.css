@@ -1,0 +1,118 @@
+/* NetFlix風の全体配色 */
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Segoe UI', 'Meiryo', 'sans-serif';
+}
+
+/* ナビゲーションバー */
+.navbar, .navbar.bg-dark {
+    background-color: #181818 !important;
+    border-bottom: 2px solid #E50914;
+}
+
+.navbar-brand {
+    color: #E50914 !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* カード */
+.card {
+    background-color: #222222;
+    color: #fff;
+    border: 1px solid #333333;
+    border-radius: 5%;
+}
+
+.card-title {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #B3B3B3;
+}
+
+/* ボタン */
+.btn-primary, .btn-outline-primary {
+    background-color: #E50914;
+    border-color: #E50914;
+    color: #fff;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #b0060f;
+    border-color: #b0060f;
+    color: #fff;
+}
+
+.btn-outline-secondary, .btn-link {
+    color: #B3B3B3;
+    border-color: #333333;
+}
+.btn-outline-secondary:hover, .btn-link:hover {
+    color: #E50914;
+    border-color: #E50914;
+}
+
+/* 削除ボタン */
+.btn-outline-danger {
+    color: #E50914;
+    border-color: #E50914;
+    background-color: transparent;
+}
+.btn-outline-danger:hover {
+    background-color: #E50914;
+    color: #fff;
+}
+
+/* フォーム */
+.form-control, .form-label {
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #333333;
+}
+.form-control:focus {
+    background-color: #222222;
+    color: #fff;
+    border-color: #E50914;
+    box-shadow: 0 0 0 0.2rem rgba(229,9,20,0.25);
+}
+
+/* フッター */
+.footer {
+    background-color: #181818;
+    color: #B3B3B3;
+    border-top: 2px solid #E50914;
+}
+
+/* カードの余白・高さ調整 */
+.card {
+    margin-bottom: 24px;
+    min-height: 220px;
+}
+
+/* リンク */
+a {
+    color: #E50914;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* スクロールバーもダークに */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #181818;
+}
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+.home {
+    color: #ff0000;
+    font-family: 'Segoe UI', 'Meiryo', 'sans-serif';
+}

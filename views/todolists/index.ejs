@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate') %>
+    <h1>【ToDoリスト】</h1>
+    <!-- <div>
+        <a href="/todolists/new">ToDoの新規作成</a>
+    </div> -->
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <% for(let todolist of todolists) { %>
+            <div class="col">
+                <div class="card h-25 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= todolist.title %>
+                        </h5>
+                        <!-- <p class="card-text">
+                            <%= todolist.content %>
+                        </p> -->
+                        <a href="/todolists/<%= todolist._id %>" class="btn btn-outline-primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+    </div>
+
+    <!-- <ul>
+        <% for(let todolist of todolists) {%>
+            <li><a href="/todolists/<%= todolist._id %>">
+                    <%= todolist.title %>
+                </a></li>
+            <% } %>
+    </ul> -->
