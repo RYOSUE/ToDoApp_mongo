@@ -16,9 +16,9 @@
 
 ## 起動手順
 
-1. **Git Bashターミナルを開き、プロジェクトフォルダに移動します。**  
+1. **Git Bashターミナルを開き、対象のプロジェクトフォルダに移動します。**  
    ```
-   cd /path/to/toDoList_yelpBase
+   cd /path/to/your/repository
    ```
 
 2. **アプリを起動します。**  
